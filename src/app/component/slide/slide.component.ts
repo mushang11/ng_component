@@ -10,7 +10,7 @@ import {Constant} from './slide.service';
   animations: [
     trigger('state', [
       state('false', style({
-        opacity: '0',
+         opacity: '0',
         'z-index': '1',
         'transition-timing-function': 'ease-out'
       })),
@@ -28,15 +28,15 @@ import {Constant} from './slide.service';
 
 export class SliderComponent implements OnInit, OnDestroy {
   bannerList= [];           // picList
-  currentPic = 0;   // current index
+  currentPic = 0;           // current index
   timer: any;
   @Input('list') list;
-  constructor(public constant: Constant) {
-    this.bannerList = constant.picList;
-    console.log(this.bannerList.length);
-  }
+  @Input('width') width;
+  @Input('height') height;
+  @Input('time') time;
 
   ngOnInit() {
+    this.bannerList = this.list;
     this.start();
   }
 
@@ -44,7 +44,7 @@ export class SliderComponent implements OnInit, OnDestroy {
     this.timer = setInterval(() => {
       this.currentPic = (this.currentPic + 1) % this.bannerList.length;
       console.log(this.currentPic);
-    }, 3000);
+    }, this.time);
   }
 
   /**

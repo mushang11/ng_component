@@ -1,8 +1,8 @@
-<div class="banner">
+<div class="banner" [style.width.px]="width" [style.height.px]="height">
   <ul class="banner_picList">
     <li [@state]="currentPic == i" *ngFor="let item of bannerList;let i =index;">
       <a [href]="item.clickUrl" target="_blank">
-        <img [src]="item.url" style="width: 900px;height: 280px;"alt="banner picture">
+        <img [src]="item.url" [style.width.px]="width" [style.height.px]="height"  alt="banner picture">
       </a>
     </li>
   </ul>
