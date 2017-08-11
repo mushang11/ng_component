@@ -43,7 +43,6 @@ export class SliderComponent implements OnInit, OnDestroy {
   start () {
     this.timer = setInterval(() => {
       this.currentPic = (this.currentPic + 1) % this.bannerList.length;
-      console.log(this.currentPic);
     }, this.time);
   }
 
