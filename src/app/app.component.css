@@ -17,3 +17,20 @@
 .item{
   background-color: #fff;
 }
+
+.introduce{
+  margin: 10px 0 ;
+  padding: 10px;
+}
+
+tr:nth-child(odd){
+  background:#fff;
+}
+
+tr:nth-child(even){
+  background:#00ae6a;
+}
+
+td{
+  text-align: center;
+}
