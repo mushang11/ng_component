@@ -1,0 +1,27 @@
+.bucSelectedButton {
+  width: 100px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.bucSelected {
+  border: 1px solid rgb(195, 195, 195);
+  color: #000;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+}
+
+.bucSelectedHover {
+  border: 1px solid rgb(74, 201, 255);
+  color: rgb(74, 201, 255);
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: rgb(238, 249, 254);
+}
+
+.bucSelectedHover .tip {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}

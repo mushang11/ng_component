@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<button class='bucSelectedButton bucSelected'  (mouseover)='mouseover()' (mouseout)='mouseout()'>
+  {{myTitle}}
+  <div *ngIf="showFlg"
+    style='border:1px solid #dcdcdc;border-radius:6px;width:auto;height:20px;line-height:20px;position:absolute;top:-40px;padding:5px;white-space:nowrap;background-color:#fafafa;color:#000;left:20px;'
+    class='tip'>{{tipTitle}}
+    <span style='position:absolute;top:25px;left:10px;background-color:#fafafa;border:1px solid #dcdcdc;width:10px;height:10px;transform:rotate(45deg);border-left:none;border-top:none;'></span>
+  </div>
+</button>
